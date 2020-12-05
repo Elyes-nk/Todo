@@ -1,14 +1,19 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import './App.css'; 
 import Todos from './components/Todos';
 
-Class App extends Component {
-  state = {
+function App() {
+
+  React.markComplete = () => {
+    console.log('hello')
+  }
+
+  React.state = {
     todos: [
       {
         id: 1,
         title: 'take out trash',
-        completed: false,
+        completed: true,
       },
       {
         id: 2,
@@ -22,14 +27,13 @@ Class App extends Component {
       },
     ]
   }
-  render() {  
   return ( 
     <div className="App">
       <h1> Todo App</h1>
-      <Todos todos = {this.state.todos}/>
+      <Todos todos = {React.state.todos} markComplete={React.markComplete} />
     </div>
   );
-  }
 }
+
 
 export default App;
