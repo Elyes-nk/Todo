@@ -28,6 +28,25 @@
   color: #61dafb;
 }
 
+.container {
+  padding: 0 1rems;
+  font-family: 'Tangerine', serif;
+  font-size: 28px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #666;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
