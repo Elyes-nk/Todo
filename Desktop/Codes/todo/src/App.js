@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import React from 'react';
 import './App.css'; 
 import Todos from './components/Todos';
@@ -16,12 +15,17 @@ class App extends React.Component {
       },
       {
         id: uuid(),
-        title: 'sport',
+        title: 'do some sport',
         completed: false,
       },
       {
         id: uuid(),
         title: 'take some courses',
+        completed: false,
+      },
+      {
+        id: uuid(),
+        title: 'relaxe',
         completed: false,
       },
     ]

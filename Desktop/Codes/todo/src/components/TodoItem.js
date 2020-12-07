@@ -9,7 +9,7 @@ export class TodoItem extends Component {
             borderBottom: '1px ccc dotted',
             textDecoration: this.props.todo.completed ? 'line-through' : 'none'}
     }
-  
+
     render() {
         const { id, title } = this.props.todo;
         return (

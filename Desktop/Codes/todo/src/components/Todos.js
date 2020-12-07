@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import TodoItem from './TodoItem';
 import PropTypes from 'prop-types';
-import { render } from '@testing-library/react';
-
 
 class Todos extends Component {
   render() {
