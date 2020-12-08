@@ -30,7 +30,7 @@ class App extends React.Component {
       },
     ]
   }
-  //click
+  // Completed or not
   markComplete = (id) => {
     this.setState({
       todos: this.state.todos.map(todo => {
@@ -42,17 +42,19 @@ class App extends React.Component {
       })
     });
   }
-  //delete
+  // Delete todo
   delTodo = (id) => {
+    // Filter
     this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)]})
   }
-  //add Todo
+  // Add Todo
   onSubmit = (title) => {
     const NewTodo = {
       id: uuid(),
       title,
       completed: false,
     }
+    // Concatinate 
     this.setState({ todos: [...this.state.todos, NewTodo]});
   }
   render() {

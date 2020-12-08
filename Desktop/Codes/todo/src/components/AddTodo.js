@@ -5,10 +5,11 @@ export class AddTodo extends Component {
         title: ''
     }
 
+    // Function input
     onAdd = (e) => {
         this.setState({[e.target.name]: e.target.value});
     }
-
+    // Function submit
     onSubmit = (e) => {
         e.preventDefault();
         this.props.onSubmit(this.state.title);
